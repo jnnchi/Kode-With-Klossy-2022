@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100px;
+  border: 2px double white;
+  color: white;
+  background-image: url("images/header.gif")
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* ensure all gridboxes are 200px tall */
+  grid-auto-rows: minmax(500px, auto);
+}
+
+div {
+  /* border: 2px double white; */
+  font-family: 'Barlow', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div h2 {
+  color: gold;
+  border: 2px double white;
+  padding: 10px 10px 10px 10px;
+  background-image: url('images/header.gif')
+}
+
+.box1 img{
+  width: 60%;
+}
+
+.box2 img{
+  width: 30%;
+}
+
+.box3 img {
+  width: 30%;
+}
+
+a {
+  text-decoration: none;
+}
+
+div div:hover {
+  background-color: #2e025b;
+  border-radius: 10px;
+  transition: 1s;
+}
