@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- TITLE AND TAB ICON -->
+  <title>✨brighten✨</title>
+  <link rel="shortcut icon" href="images/logo.gif">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Space+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+  <!------------ MAIN HEADER ------------->
+  <div class="headerbox"><h1 class="header">brighten.</h1></div>
+  <!------------ NAVIGATION BAR OF BUTTONS ------------->
+  <nav>
+    <button class="home_tablink" onclick="openPage('Home', this)" id="defaultOpen"><b>home.</b></button>
+    <button class="explore_tablink" onclick="openPage('Explore', this)"><b>explore.</b></button>
+    <button class="community_tablink" onclick="openPage('Community', this)" id="defaultOpen"><b>community.</b></button>
+    <button class="contact_tablink" onclick="openPage('Contact', this)"><b>contact.</b></button>
+  </nav>
+
+  <!------------- HOME PAGE CONTENT ---------------->
+  <div id="Home" class="tabcontent">
+    <div>
+      <h2>about us.</h2>
+      <img src="images/logo.gif" alt="our logo!" class="about">
+      <p>for all artists, creativity tends to come in bursts, catalyzed by moments of inspiration that are often few and far between, leaving us constantly in search of the next spark.</p>
+      <p>enter, your next spark.</p>
+      <p> <i>brighten</i> fuels your artistic vision in tiny illuminations––bits and pieces of inspiration to pierce through even the foggiest of nights!</p>
+    </div>
+    <br><br><br>
+    <div>
+      <h2>our team.</h2>
+      <img src="images/kwk.png" alt="KWK logo!" class="kwk">
+      <p>we're a team of four KWK scholars with a passion for all things creative!</p>
+      <p>using what we learned about HTML, CSS, and JavaScript, we are determined to share our inspirations with the world!</p>
+      <p>Nairobi's IG: <a href="https://www.instagram.com/lilny_ny/">lilny_ny</a>, Tran's IG: <a href="https://www.instagram.com/changingcosmic/">changingcosmic</a>, Jenni's IG: <a href="https://www.instagram.com/ehnnifer/">ehnnifer</a>, Nabiha's IG: <a href="https://www.instagram.com/nabiha.mahboob/">nabiha.mahboob</a></p>
+    </div>
+    <br><br><br><br>
+    <h2>brighten's pitch!</h2>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFJZkTO0q0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+      </iframe>
+    </div>
+    <h2>our demo!</h2>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFJsSCyDCM&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+      </iframe>
+    </div>
+    <marquee direction="right" scrollamount="10"><h2><span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block</h2></marquee>
+  </div>
+
+  <!------------- EXPLORE PAGE CONTENT ---------------->
+  <div id="Explore" class="tabcontent">
+    <h2>explore genres!</h2>
+    <div class="explore_btns">
+      <a href="nature.html" target="_blank" class="naturebtn">NATURE</a>
+      <a href="romance.html" target="_blank" class="romancebtn" href="./romance.html">ROMANCE</a>
+      <a href="tech.html" target="_blank" class="techbtn">TECHNOLOGY</a>
+      <a href="horror.html" target="_blank" class="horrorbtn">HORROR</a>
+    </div>
+    <marquee direction="right" scrollamount="10"><h2><span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block</h2></marquee>
+  </div>
+
+  <!------------- COMMUNITY PAGE CONTENT ---------------->
+  <div id="Community" class="tabcontent">
+    <!-- SUBMIT WORK -->
+    <h2><b>[SUBMIT YOUR WORK HERE]</b></h2>
+    <div class="submit-work-container">
+      <form class="add-work">
+        <input class="artist_name" type="text" placeholder="Enter Your name">
+        <br><br>
+        <input class="file_upload" type="file" >
+        <br><br>
+        <input class="description" type="text" placeholder="Enter a title for your art">
+        <br><br>
+        <!-- multiple choice options -->
+        <div class="options">
+        <input type="radio" id="writer" name="art_form" value="Writer">
+        <label for="writer">writer</label>
+        
+        <input type="radio" id="artist" name="art_form" value="Artist">
+        <label for="artist">artist</label>
+        
+        <input type="radio" id="dancer" name="art_form" value="Dancer">
+        <label for="dancer">dancer</label>
+        
+        <input type="radio" id="crafter" name="art_form" value="Crafter">
+        <label for="crafter">crafter</label>
+
+          <input type="radio" id="etc" name="art_form" value="Etc">
+        <label for="Etc">etc</label>
+        </div>
+        <!-- submit -->
+        <button class="submit">submit</button> 
+        <p class="result"></p>
+        <img id="output">
+      </form>
+      <img src="images/submit.png">
+    </div>
+    <br><br>
+    <button onclick="clear()">clear all</button>
+    <!-- OUR WORK -->
+    <div class="our-art-gallery">
+      <div class="block" id="writer">
+        <h2>writers!</h2>
+        
+        <button onclick="show('zine-to-show')">view a zine</button>
+        <p id="zine-to-show" class="to-clear">
+          <img src="images/zinecover.jpg" alt="cover of zine">
+          <img src="images/zine1.jpg" alt="page of zine">
+          <img src="images/zine2.jpg" alt="page of zine">
+          hiii! my name is jenni and i like whales, light fixtures, computer science, journaling, art, and poetry <3. this is a zine i made for halloween last year!
+        </p>
+        
+        <button class="view-poem">view a poem</button>
+        <p id="poem" class="to-clear"></p>
+      </div>
+      
+      <div class="block" id="artist">  
+        <h2>artists!</h2>
+        
+        <button onclick="show('sketch-to-show')">view a sketch</button>
+        <p id="sketch-to-show" class="to-clear">
+          <img src="images/sketch.jpg" alt="Tran's sketch">
+          Hello! My name is Tran, and I like to draw! I'm not very good at it, but I'm trying my best to improve :D Never give up on what you love
+        </p>
+        
+        <button onclick="show('henna-to-show')">view a henna design</button>
+        <p id="henna-to-show" class="to-clear">
+          <img src="images/hennadesign.jpg" alt="Henna Design">
+          <img src="images/hennadesign2.jpg" alt="Henna Design">
+          <br>
+          Hi! I'm Nabiha and I like doing henna art. Henna is a big part of my culture and I've 
+          grown up using it and getting it done. I taught my self how to do henna and fell in 
+          love with it. I do it on holidays as a tradition and have done it professionally multiple 
+          times as well. I started doing henna in 7th grade and have gotten better over time. These
+          pictures are from the last time I did henna a few months ago!!
+          </br>
+        </p>
+      </div>
+      
+      <div class="block" id="dancer">
+        <h2>dancers!</h2>
+        <a href="https://youtu.be/DSjaNMHSCY4" target="_blank"><button>view a dance</button></a>
+        <p class="to-clear">
+          <img src="images/CommunityNairobi.jpg" alt="Dance photo">
+          Hi! My name is Nairobi and I performed this dance back in 2018 as the character "Mother Earth". I love love <em> LOVE </em> dancing and now work with bigger companies such as BalletMet for ballet training! If you want to see exactly where my section starts skip to 23:04 in the youtube link. I hope my dance from my childhood inspired some of you to pursue what you love- maybe in the name of dance? ;)
+        </p>
+        
+      </div>
+      
+      <div class="block" id="crafter">
+        <h2>crafters!</h2>
+        
+        <button onclick="show('book-to-show')">view a handmade book</button>
+        <p id="book-to-show" class="to-clear">
+          <img src="images/bookbinding.jpg" alt="Bookbinding">
+          Hello! My name is Tran, and this is the book I binded! It's pretty easy to start, so maybe you should try~
+        </p>
+        
+      </div>
+      
+    </div>
+    <marquee direction="right" scrollamount="10"><h2><span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block</h2></marquee>
+  </div>
+
+  <!------------- CONTACT PAGE CONTENT ---------------->
+  <div id="Contact" class="tabcontent">
+    <h2>send us a message <3</h2>
+    <img class="contactpic" src="images/formhead.gif" alt="form header">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIS46Qvy1CYJzbI80f8AfGVRFCVx0jfpvoMKFjCv95AU0Cww/viewform?embedded=true" width="640" height="1186" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <marquee direction="right" scrollamount="10" style="color:white;"><h2><span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block <span>punch</span> that art block</h2></marquee>
+  </div>
+
+  <!------------- CALL JAVA SCRIPT ---------------->
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
